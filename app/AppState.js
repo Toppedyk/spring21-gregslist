@@ -1,5 +1,6 @@
 import Car from "./Models/Car.js"
 import House from "./Models/House.js"
+import Job from "./Models/Job.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
@@ -17,6 +18,10 @@ class AppState extends EventEmitter {
     new House(3,2,1200,'800 N franklin st', 250000,'https://cdn.houseplansservices.com/content/9a0kud8eguqun8d72nctn0all2/w991.jpg?v=3'),
     new House(4,2,1500,'460 N front St.', 375000, 'https://cdnassets.hw.net/52/e3/78d0af434747989382b9616ae56e/2017-8-30-moonhoon-simple-house-16-edited.jpg'),
     new House(2,1.5,1100,'420 69th St.', 300120,'https://cdn.jhmrad.com/wp-content/uploads/simple-house-designs-philippines-cheap-design_519236.jpg')
+  ]
+
+  jobs=[
+    new Job('Instructor','Teaching young developers how to code correctly',30, '9-6','Codeworks'),new Job('Mechanic','Fixin stuff and junk', 25,'7-6','West End Diesel'),new Job('Realator','Helping people find a home',50,'10-8','Title One'),new Job('Personal Trainer','Helping people attain their physical goals',18,'12-7','Axiom Fitness')
   ]
 }
 
